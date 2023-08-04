@@ -1,5 +1,7 @@
 package ch11;
 import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
@@ -24,14 +26,14 @@ public class RegisterMgr {
 		ResultSet rs = null;
 		Vector<RegisterBean> vlist = new Vector<RegisterBean>();
 		try {
-			conn = DriverManager.getConnection(JDBC_URL,USER,PASS);
+			conn = DriverManager.getConnection(JDBC_URL,JDBC_USER,JDBC_PASS);
 			String strQuery = "select * from tblRegister";
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(strQuery);
 			while (rs.next()) {
 				RegisterBean regBean = new RegisterBean();
 				regBean.setId(rs.getString("id"));
-				regBean.setPasswd(rs.getString("pwd"));
+				regBean.setPwd(rs.getString("pwd"));
 				regBean.setName(rs.getString("name"));
 				regBean.setNum1(rs.getString("num1"));
 				regBean.setNum2(rs.getString("num2"));

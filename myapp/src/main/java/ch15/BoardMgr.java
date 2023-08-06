@@ -288,7 +288,7 @@ public class BoardMgr {
 		}
 	}
 
-	// �亯�� ��ġ�� ����
+	
 	public void replyUpBoard(int ref, int pos) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -307,7 +307,7 @@ public class BoardMgr {
 		}
 	}
 
-	//���� �ٿ�ε�
+	
 		public void downLoad(HttpServletRequest req, HttpServletResponse res,
 				JspWriter out, PageContext pageContext) {
 			try {

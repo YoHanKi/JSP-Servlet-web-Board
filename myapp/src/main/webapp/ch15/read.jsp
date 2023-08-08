@@ -21,7 +21,7 @@
 %>
 <html>
 <head>
-<title>JSP Board</title>
+<title>HANS Board</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 	function list(){
@@ -34,28 +34,28 @@
 	}
 </script>
 </head>
-<body bgcolor="#FFFFCC">
+<body>
 <br/><br/>
 <table align="center" width="600" cellspacing="3">
  <tr>
-  <td bgcolor="gray" height="25" align="center">글읽기</td>
+  <td bgcolor="#D0D0D0" height="25" align="center"><strong>글읽기</strong></td>
  </tr>
  <tr>
   <td colspan="2">
    <table cellpadding="3" cellspacing="0" width="100%"> 
     <tr> 
-  <td align="center" bgcolor="gary" width="10%"> 이 름 </td>
-  <td ><%=name%></td>
-  <td align="center" bgcolor="gary" width="10%"> 등록날짜 </td>
-  <td ><%=regdate%></td>
+  <td align="center" bgcolor="white" width="20%"> 이 름 </td>
+  <td bgcolor="white"><%=name%></td>
+  <td align="center" bgcolor="white" width="20%"> 등록날짜 </td>
+  <td bgcolor="white"><%=regdate%></td>
  </tr>
  <tr> 
-    <td align="center" bgcolor="gray"> 제 목</td>
-    <td  colspan="3"><%=subject%></td>
+    <td align="center" bgcolor="white"> 제 목</td>
+    <td bgcolor="white" colspan="3"><%=subject%></td>
    </tr>
    <tr> 
-     <td align="center" bgcolor="gray">첨부파일</td>
-     <td colspan="3">
+     <td align="center" bgcolor="white">첨부파일</td>
+     <td bgcolor="white" colspan="3">
      <% if( filename !=null && !filename.equals("")) {%>
   		<a href="javascript:down('<%=filename%>')"><%=filename%></a>
   		 &nbsp;&nbsp;<font color="blue">(<%=filesize%>KBytes)</font>  
@@ -67,7 +67,7 @@
    </tr>
    <tr>
     <td colspan="4" align="right">
-     <%=ip%>로 부터 글을 남기셨습니다. / 조회수  <%=count%>
+     <%=ip%>로 부터 글을 남기셨습니다./  조회수  <%=count%>
     </td>
    </tr>
    </table>

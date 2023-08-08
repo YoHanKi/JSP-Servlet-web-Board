@@ -36,12 +36,13 @@
 }
 </script>
 </head>
-<body bgcolor="black">
+<body bgcolor="white">
 <div align="center">
 	<br/><br/>
 	<table width="600" cellpadding="3">
 		<tr>
-			<td bgcolor="black" height="21" align="center">
+			<td bgcolor="#D0D0D0" height="21" align="center">
+				사용자의 비밀번호를 입력해주세요.
 			</td>
 		</tr>
 	</table>
@@ -52,7 +53,7 @@
 	<table>
 	<tr>
 		<td align="center">
-		<input type="password" name"pass" size="17" maxlength="15">
+		<input type="password" name="pass" size="17" maxlength="15">
 		</td>
 	</tr>
 	<tr>
